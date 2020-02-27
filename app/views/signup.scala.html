@@ -1,0 +1,21 @@
+@(form: Form[SignUpForm])
+@main("Sign up!") {
+    @helper.form(routes.AuthController.newUser()) {
+        <h1>Sign up</h1>
+        <p>
+            <input type="text" name="name" placeholder="Name">
+        </p>
+        <p>
+            <input type="password" name="password" placeholder="Password">
+        </p>
+        <p>
+            <input type="password" name="passwordConfirmation" placeholder="Confirm Password">
+        </p>
+        <p>
+            <button type="submit">Sign up</button>
+        </p>
+        <p>
+            Already have a user? <a href="@routes.AuthController.login()">Log in now!</a>
+        </p>
+    }
+}
