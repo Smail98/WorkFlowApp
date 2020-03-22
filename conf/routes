@@ -7,7 +7,7 @@ GET     /                           controllers.Application.index()
 GET     /signup                     controllers.AuthController.signup()
 POST    /signup                     controllers.AuthController.newUser()
 GET     /login                      controllers.AuthController.login()
-POST    /login                      controllers.AuthController.authenticate()
+POST    /users/authenticate                     controllers.AuthController.authenticate()
 GET     /logout                     controllers.AuthController.logout()
 
 
